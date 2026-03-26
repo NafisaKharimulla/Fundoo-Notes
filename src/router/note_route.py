@@ -18,3 +18,12 @@ def add_note(note: NoteCreate, db: Session = Depends(get_db)):
 @router.get("/", response_model=list[NoteResponse])
 def read_notes(db: Session = Depends(get_db)):
     return get_all_notes(db)
+
+@router.put("/{note_id}", response_model=NoteResponse)
+def edit_note(note_id: int, note: NoteCreate, db: Session = Depends(get_db)):
+    return update_note(db, note_id, note)
+
+
+@router.delete("/{note_id}")
+def remove_note(note_id: int, db: Session = Depends(get_db)):
+    return delete_note(db, note_id)
