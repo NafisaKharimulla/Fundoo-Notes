@@ -12,6 +12,7 @@ Fundoo Notes API is a production-ready FastAPI backend application that allows u
 - Modular Architecture: Separate folders for configuration, models, schemas, services, and routes
 
 ## Project Folder Structure
+```
 fundoo-app/
 ├── src/
 │   ├── config/        # Database and logger configuration
@@ -25,6 +26,7 @@ fundoo-app/
 ├── .env               # Environment variables
 ├── requirements.txt   # Python dependencies
 └── README.md          # Project documentation
+```
 
 ## Environment Variables (.env)
 USER_NAME
