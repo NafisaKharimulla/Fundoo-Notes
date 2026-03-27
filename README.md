@@ -29,11 +29,13 @@ fundoo-app/
 ```
 
 ## Environment Variables (.env)
+```
 USER_NAME
 PASSWORD
 IP
 PORT_NUMBER
 DATABASE
+```
 
 ## Installation & Setup
 1. Clone the repository:
